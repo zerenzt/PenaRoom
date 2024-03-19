@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('frontend_assets') }}/css/style.css">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white bg-body-tertiary">
     <div class="container">
@@ -7,12 +7,12 @@
         </a> -->
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start mx-auto">
-            <ul>
+            {{-- <ul>
                 <li class="nav-item">
                 <a class="nav-link {{($title == 'Home')? 'active':''}}" href="/home">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link {{($title == 'About')? 'active':''}}" href="/about">Home</a>
+                <a class="nav-link {{($title == 'About')? 'active':''}}" href="/about"></a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link {{($title == 'Contact')? 'active':''}}" href="/contact">Home</a>
@@ -20,15 +20,15 @@
                 <li class="nav-item">
                 <a class="nav-link {{($title == 'Shop')? 'active':''}}" href="/shop">Home</a>
                 </li>
-            </ul>
-            {{-- <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('login')}}">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('register')}}">Register</a>
-                </li>
             </ul> --}}
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a>Login</a>
+                </li>
+                <li class="nav-item">
+                    <a>Register</a>
+                </li>
+            </ul>
             <ul>
             <div class="navbar-end is-align-items-center ml-0">          
                 <form class="search-bar">

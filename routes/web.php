@@ -18,3 +18,21 @@ Route::get('/', function () {
         "title" => "Home"
     ]);
 });
+
+Route::get('/detail', function () {
+    return view('detail', [
+        "title" => "Detail"
+    ]);
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard', [
+        "title" => "Dashboard"
+    ]);
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard', [
+        "title" => "Dashboard"
+    ]);
+});

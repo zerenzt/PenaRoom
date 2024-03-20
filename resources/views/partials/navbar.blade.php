@@ -9,7 +9,7 @@
             <div class="navbar-start mx-auto">
             <ul>
                 <li class="nav-item">
-                <a class="nav-link {{($title == 'Home')? 'active':''}}" href="/home">Home</a>
+                <a class="nav-link {{($title == 'Home')? 'active':''}}" href="/home">Home</a> 
                 </li>
                 <li class="nav-item">
                 <a class="nav-link {{($title == 'About')? 'active':''}}" href="#artikel">Artikel</a>

@@ -27,7 +27,7 @@ Route::get('/detail', function () {
 
 // routes/web.php
 
-Route::get('/admin/dashboard', function () {
+Route::get('/dashboard', function () {
     return view('admin.dashboard.index', [
         "title"=> "Dashboard"
     ]);
@@ -39,5 +39,11 @@ Route::get('/admin/dashboard', function () {
 Route::get('/login', function () {
     return view('admin.auth.login', [
         "title" => "Login"
+    ]);
+});
+
+Route::get('/register', function () {
+    return view('admin.auth.register', [
+        "title" => "Register"
     ]);
 });

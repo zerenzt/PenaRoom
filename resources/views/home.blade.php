@@ -3,16 +3,19 @@
 @section('container')
 <link rel="stylesheet" href="{{ asset('admin/css/style.css') }}">
 <body>
+    {{-- Header --}}
     <div class="row">
         <div class="col-2">  
             <h1>Welcome</h1>
-            <p>Get the latest inspiration from our team on new works 
-                Find interesting stories, unique writing, and exclusive content.</p>
+            <h5>Get the latest inspiration from our team on new works 
+                Find interesting stories, unique writing, and exclusive content.</h5>
         </div>
         <div class="col-2">
-            <img src="admin/images/home.png" alt="">
+            <img src="{{asset('admin/images/home.jpg')}}">
         </div>
     </div>
+
+
 {{-- Artikel --}}
     <section class="small-class">
         <h4 id="artikel">Artikel</h4>
@@ -94,6 +97,23 @@
                 </div>                
             </div>
         </div>
+    </section>
+
+    <!--artist-->
+    <section class="small-class">
+        <h4 id="essai">Novel</h4>
+        <div class="line-with-border"></div>
+            <div class="row">
+                <div class="col-7">
+                    <img src="{{ asset('admin/images/terpikat.jpg') }}">
+                    <h3>Terpikat</h3>
+                    <p>Ghefira Zakira</p>
+                </div>    
+                <div class="col-7">
+                    <img src="{{ asset('admin/images/172days.jpg') }}">
+                    <h3>172 Days</h3>
+                    <p>Ghefira Zakira</p>
+            </div>
     </section>
 
     {{-- JS script for toggle menu --}}

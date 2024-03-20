@@ -285,6 +285,60 @@ p {
   transform: scale(1.05); /* Memperbesar elemen saat dihover */
 }
 
+.col-6{
+  display: flex block;
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.col-6 img{
+  width: 100%;
+}
+
+.col-7 {
+  flex-basis: calc(33.33% - 20px); /* Setengah dari lebar parent dengan jarak 10px di antara elemen */
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Sesuaikan jarak antar elemen */
+  margin-right: 20px; /* Jarak antar elemen secara horizontal */
+  padding: 10px;
+  transition: transform 0.5s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex; /* Menjadikan container flexbox */
+  flex-direction: column; /* Membuat anak-anak elemen disusun dalam kolom */
+  align-items: center; /* Menyusun anak-anak elemen di tengah-tengah secara vertikal */
+}
+
+.col-7:nth-child(3n) {
+  margin-right: 0; /* Menghilangkan margin-right pada elemen ke-3 untuk mendekatkannya */
+}
+
+
+.col-7 img {
+  max-width: 100%; /* Memastikan gambar tidak melebihi ukuran wadahnya */
+  border-radius: 5px; /* Memberikan sudut pada gambar */
+  height: auto;
+}
+
+.col-7 h4 {
+  margin-top: 10px;
+  font-size: 0.75em; /* Memperbesar ukuran teks judul */
+  color: #000000; /* Warna teks judul */
+}
+
+.col-7 h5 {
+  margin-top: 10px;
+  font-size: 0.5em; /* Ukuran teks artikel */
+  color: #000000; /* Warna teks artikel */
+}
+
+/* Efek hover untuk memberikan animasi saat dihover */
+.col-7:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+}
+
+
 .reg-form {
   max-width: none;
   margin: auto;
@@ -737,3 +791,15 @@ button:hover {
 
 
 .card{border: none;height: 320px}.forms-inputs{position: relative}.forms-inputs span{position: absolute;top:-18px;left: 10px;background-color: #fff;padding: 5px 10px;font-size: 15px}.forms-inputs input{height: 50px;border: 2px solid #eee}.forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}.btn{height: 50px}.success-data{display: flex;flex-direction: column}.bxs-badge-check{font-size: 90px}
+
+.dashboard-container {
+  background-color: #3498db; /* background color for the dashboard */
+  color: #ffffff; /* text color */
+  padding: 20px;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+

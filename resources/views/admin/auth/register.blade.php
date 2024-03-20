@@ -1,57 +1,69 @@
-<!doctype html>
-    @php
-        $title = "Register";
-    @endphp
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
 
-    <link href="theme/css/bootstrap.min.css" rel="stylesheet">
-    <link href="theme/css/font-awesome.min.css" rel="stylesheet">
-    <link href="theme/css/style.css" rel="stylesheet">
-
+    <!-- Title Page-->
     <title>Register</title>
-  </head>
-  <body>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-sub-main">
-                <div class="form-group">
-                    <input id="email" name="username" class="form-control _ge_de_ol" type="text" placeholder="Enter Username" required="" aria-required="true">
-                </div>
-                <div class="form-group">
-                    <input id="email" name="email" class="form-control _ge_de_ol" type="text" placeholder="Enter Email" required="" aria-required="true">
-                </div>
-                <div class="form-group">                                              
-                    <input id="password" type="password" class="form-control" name="password" placeholder="********" required="required">
-                    <i toggle="#password" class="fa fa-fw fa-eye toggle-password field-icon"></i>
-                </div>
 
-              <div class="form-group">
-                {{-- <div class="login-checkbox">
-                    <label>
-                        <input type="checkbox" name="aggree">Agree the terms and policy
-                    </label>
-                </div> --}}
-                <div class="check_box_main">
-                  <a href="#" class="pas-text">Forgot Password</a>
-                </div>
-              </div>
+    @include('partials/css')
 
-              <div class="form-group">
-                <div class="btn_uy">
-                  <a href="#"><span>Register</span></a>
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <div class="page-content--bge5">
+            <div class="container">
+                <div class="login-wrap">
+                    <div class="login-content">
+                        <div class="reg-form">
+                            <form action="{{route('register')}}" method="post">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="nama">Nama</label>
+                                    <input class="au-input au-input--full" type="text" id="nama" name="nama" placeholder="Nama" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input class="au-input au-input--full" type="email" id="email" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input class="au-input au-input--full" type="password" id="password" name="password" placeholder="Password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password_confirmation">Password Confirmation</label>
+                                    <input class="au-input au-input--full" type="password" id="password_confirmation" name="password_confirmation" placeholder="Password Confirmation" required>
+                                </div>
+                                <div class="login-checkbox">
+                                    <input type="checkbox" id="aggree" name="aggree" required>
+                                    <label for="aggree">Agree to the terms and policy</label>
+                                </div>
+                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Register</button>
+                            </form>
+                            <div class="register-link">
+                                <p>
+                                    Already have an account?
+                                    <a href="{{route('login')}}">Login</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-  </body>
+
+    </div>
+
+    @include('partials/script')
+
+</body>
+
 </html>
+<!-- end document-->

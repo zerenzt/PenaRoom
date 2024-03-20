@@ -15,7 +15,7 @@
     </div>
 {{-- Artikel --}}
     <section class="small-class">
-        <h4>Artikel</h4>
+        <h4 id="artikel">Artikel</h4>
         <div class="line-with-border"></div>
             <div class="row">
                 {{-- <a href="{{ route('detail.index') }}"> --}}
@@ -41,7 +41,7 @@
 
     {{-- Featured products --}}
     <section class="small-class">
-        <h4>Essai</h4>
+        <h4 id="essai">Essai</h4>
         <div class="line-with-border"></div>
             <div class="row">
                 <div class="col-4">
@@ -70,7 +70,7 @@
     {{-- Artist testimonial --}}
     <section class="testimonial">
         <div class="small-container">
-            <h4>Puisi</h4>
+            <h4 id="puisi">Puisi</h4>
             <div class="line-with-border"></div>
             <div class="row">
                 <div class="col-4">

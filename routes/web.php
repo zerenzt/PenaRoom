@@ -27,11 +27,12 @@ Route::get('/detail', function () {
 
 // routes/web.php
 
-Route::get('/dashboard', function () {
-    return view('admin.index', [
-        "title" => "Dashboard"
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard.index', [
+        "title"=> "Dashboard"
     ]);
 });
+
 
 
 

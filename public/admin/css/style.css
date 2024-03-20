@@ -318,7 +318,9 @@ p {
 .col-7 img {
   max-width: 100%; /* Memastikan gambar tidak melebihi ukuran wadahnya */
   border-radius: 5px; /* Memberikan sudut pada gambar */
-  height: auto;
+  height: 210;
+  width: 210px;
+  height: 285px;
 }
 
 .col-7 h4 {

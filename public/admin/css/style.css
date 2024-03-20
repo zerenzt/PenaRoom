@@ -711,3 +711,29 @@ button:hover {
 .comment-submit-btn:hover {
   background-color: #0056b3;
 }
+
+.dropdown-menu {
+    width: 250px; /* Atur lebar formulir dropdown */
+}
+
+.form-group {
+    margin-bottom: 1rem; /* Atur jarak antar elemen formulir */
+}
+
+.form-check-input {
+    margin-top: 0.3rem; /* Atur jarak checkbox dari label */
+}
+
+.btn-primary {
+    width: 100%; /* Tombol penuh lebar */
+}
+
+/* Biar dropdown tidak tertutup saat diklik */
+.dropdown-menu.keep-open {
+    padding: 15px;
+    width: auto !important;
+    display: block !important;
+}
+
+
+.card{border: none;height: 320px}.forms-inputs{position: relative}.forms-inputs span{position: absolute;top:-18px;left: 10px;background-color: #fff;padding: 5px 10px;font-size: 15px}.forms-inputs input{height: 50px;border: 2px solid #eee}.forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}.btn{height: 50px}.success-data{display: flex;flex-direction: column}.bxs-badge-check{font-size: 90px}

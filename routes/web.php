@@ -25,14 +25,18 @@ Route::get('/detail', function () {
     ]);
 });
 
+// routes/web.php
+
 Route::get('/dashboard', function () {
-    return view('dashboard', [
+    return view('admin.index', [
         "title" => "Dashboard"
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard', [
-        "title" => "Dashboard"
+
+
+Route::get('/login', function () {
+    return view('admin.auth.login', [
+        "title" => "Login"
     ]);
 });
